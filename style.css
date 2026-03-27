@@ -1,0 +1,136 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+}
+
+body.light {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #0f172a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+    color: white;
+}
+
+#darkToggle {
+    background: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+    background: #020617;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: var(--accent);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+main {
+    padding: 30px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.favorite {
+    border: 2px solid gold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+}
+
+tr:hover {
+    background: #1e293b;
+}
+
+
+.tag {
+    background: var(--accent);
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
