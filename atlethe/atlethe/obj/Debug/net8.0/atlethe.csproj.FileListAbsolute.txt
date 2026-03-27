@@ -1,0 +1,14 @@
+E:\suli\athelte\atlethe\atlethe\bin\Debug\net8.0\atlethe.exe
+E:\suli\athelte\atlethe\atlethe\bin\Debug\net8.0\atlethe.deps.json
+E:\suli\athelte\atlethe\atlethe\bin\Debug\net8.0\atlethe.runtimeconfig.json
+E:\suli\athelte\atlethe\atlethe\bin\Debug\net8.0\atlethe.dll
+E:\suli\athelte\atlethe\atlethe\bin\Debug\net8.0\atlethe.pdb
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.GeneratedMSBuildEditorConfig.editorconfig
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.AssemblyInfoInputs.cache
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.AssemblyInfo.cs
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.csproj.CoreCompileInputs.cache
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.dll
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\refint\atlethe.dll
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.pdb
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\atlethe.genruntimeconfig.cache
+E:\suli\athelte\atlethe\atlethe\obj\Debug\net8.0\ref\atlethe.dll
