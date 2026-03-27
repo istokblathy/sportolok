@@ -1,0 +1,191 @@
+/* =========================
+   MODERN BASE CSS
+   ========================= */
+
+/* ---- CSS RESET + BOX MODEL ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- CSS VÁLTOZÓK (DESIGN SYSTEM) ---- */
+:root {
+  /* Színek */
+  --color-bg: #0f172a;          /* háttér (dark navy) */
+  --color-surface: #111827;     /* kártyák */
+  --color-text: #e5e7eb;        /* fő szöveg */
+  --color-muted: #9ca3af;       /* halvány szöveg */
+  --color-primary: #6366f1;     /* indigo */
+  --color-accent: #22d3ee;      /* cyan */
+  --color-danger: #ef4444;
+
+  /* Tipográfia */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Méretek */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Árnyékok */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.25);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.35);
+
+  /* Animáció */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* ---- ALAP HTML / BODY ---- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    1200px circle at top left,
+    #1e293b,
+    var(--color-bg)
+  );
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- TIPOGRÁFIA ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  color: var(--color-muted);
+  max-width: 65ch;
+}
+
+/* ---- LINKEK ---- */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* ---- GOMBOK ---- */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.6em 1.1em;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  color: #020617;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ---- INPUTOK / FORM ---- */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.6em 0.75em;
+  border-radius: var(--radius-sm);
+  border: 1px solid #1f2937;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,.25);
+}
+
+/* ---- KÁRTYA (CARD) ---- */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* ---- LAYOUT SEGÉDEK ---- */
+.container {
+  width: min(1200px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.stack > * + * {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ---- KÓD BLOKK ---- */
+code, pre {
+  font-family: var(--font-mono);
+  background-color: #020617;
+  color: #a5b4fc;
+}
+
+pre {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+/* ---- KIS FINOMSÁGOK ---- */
+::selection {
+  background: var(--color-primary);
+  color: #020617;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+
